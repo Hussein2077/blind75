@@ -1,3 +1,13 @@
 package arrayshashing
 
-func containsDuplicate(nums []int)
+func containsDuplicate(nums []int) bool {
+	// first declare a map
+	numMap := make(map[int]bool)
+	for _, num := range nums {
+		if numMap[num] {
+			return true
+		}
+		numMap[num] = true
+	}
+	return false
+}
