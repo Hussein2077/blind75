@@ -8,7 +8,6 @@ func isAnagram(s string, t string) bool {
 	for i := 0; i < len(s); i++ {
 		count[s[i]-'a']++ // single quotes!
 		count[t[i]-'a']--
-
 	}
 	for _, v := range count {
 		if v != 0 {
