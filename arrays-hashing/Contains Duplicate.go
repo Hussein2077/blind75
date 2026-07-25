@@ -11,3 +11,7 @@ func containsDuplicate(nums []int) bool {
 	}
 	return false
 }
+
+// Time complexity: O(n)
+// Space complexity: O(n)
+//another solution
